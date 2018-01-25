@@ -1,6 +1,94 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Glegoo);
+
+/*Added by Prasanga Fernando for the drop down menu*/
+ * {
+            margin: 0;
+            padding: 0;
+        }
+    
+        h1 {
+            font-size: 45px;
+            font-weight: 100;
+            letter-spacing: 15px;
+            text-align: center;
+        }
+
+        h1, #main_content, #dog_link {
+            padding: 15px;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+    
+        a {
+            color: #06c;
+        }
+    
+        #main_nav ul {
+            background: transparent;
+            float: left;
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+    
+        #main_nav li {
+            float: left;
+            position: relative;
+            width: 150px;
+            list-style: none;
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+    
+        #main_nav > ul > li > a, h1 {
+            text-transform: uppercase;
+        }
+
+        #main_nav > ul > li > ul> li {
+            color: #fff;
+        }
+    
+    
+        #main_nav a {
+            display: block;
+            text-decoration: none;
+            padding: 5px 15px;
+            color: #000;
+        }
+
+        #main_nav ul ul {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            visibility: hidden;
+            opacity: 0;
+        }
+    
+        #main_nav ul ul ul {
+            left: 100%;
+            top: 0;
+        }
+    
+        #main_nav li:hover, #main_nav li:hover li {
+            background: #000;
+        }
+    
+        #main_nav li li:hover, #main_nav li li:hover li {
+            background: #bbb;
+        }
+    
+        #main_nav li li li:hover {
+            background: #999;
+        }
+    
+        #main_nav li:hover > ul {
+            visibility: visible;
+            opacity: 1;
+        }
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -39,7 +127,7 @@ a:hover {
 
 .section-heading {
   text-align: center;
-  margin-bottom: 65px;
+  margin-bottom: 41px;
 }
 
 .section-heading p {
@@ -127,7 +215,7 @@ a:hover {
 .global-page-header {
   background-attachment: fixed;
   background-size: cover;
-  padding: 120px 0 25px 0;
+  padding: 100px 0 0 0;
   position: relative;
   background: #cc2129;
   color: #fff;
@@ -141,9 +229,9 @@ a:hover {
 }
 
 .global-page-header .breadcrumb {
-  background: none;
-  font-size: 16px;
-  padding: 8px  0;
+    background: none;
+    font-size: 16px;
+    padding: 0px 0;
 }
 
 .global-page-header .breadcrumb .active, .global-page-header .breadcrumb li a {
@@ -157,7 +245,7 @@ a:hover {
 }
 
 .works-fit {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .works-fit figure .buttons {
@@ -192,7 +280,7 @@ a:hover {
 }
 
 .navbar-header .navbar-brand {
-  padding: 5px 0;
+  padding: 0px 0;
 }
 
 .navbar-header .navbar-brand a {
@@ -219,7 +307,7 @@ a:hover {
 }
 
 #top-bar .navbar-nav li a:hover {
-  background: transparent;
+  background: #fff;
 }
 
 #top-bar.animated-header {
@@ -233,6 +321,7 @@ a:hover {
 }
 
 #top-bar .main-menu li a {
+  background: #fff;
   color: #444;
   font-size: 14px;
   font-weight: 500;
@@ -244,6 +333,7 @@ a:hover {
 /*when move color red*/
 #top-bar .main-menu li a:hover {
   color: #cc2129;
+  background: #fff;
 }
 
 .navbar-custom .nav li a {
@@ -298,7 +388,7 @@ a:hover {
   line-height: normal;
   text-decoration: none;
   padding: 8px 0;
-  color: #fff;
+  background: #d02c2c;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -407,7 +497,7 @@ a:hover {
 }
 
 #about {
-  padding: 110px 0;
+  padding: 50px 0;
 }
 
 #about .block {
@@ -460,7 +550,7 @@ a:hover {
 }
 
 .works {
-  padding: 80px 0;
+  padding: -10px 0;
   background: #FCFCFC;
 }
 
@@ -676,11 +766,11 @@ figure figcaption p {
 }
 
 #blog-full-width {
-  padding: 40px 0 80px;
+    padding: 5px 0 80px;
 }
 
 article {
-  padding: 30px 0;
+  padding: 0px 0;
 }
 
 .blog-content h2 {
@@ -1425,6 +1515,11 @@ px      68    160    252    */
     color: #333;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
+}
+
+.img-responsive{
+  width: 80%;
+  height: 80%;
 }
 
 /*		Wide Mobile Layout: 480px.
